@@ -60,7 +60,12 @@ html.not-top {
 }
 /*the entire body of the html page*/
 body {    
-	background: #eeeeee;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2825b+0,e55b2b+38,e55b2b+68,f07146+100 */
+	background: #f2825b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f2825b 0%, #e55b2b 38%, #e55b2b 68%, #f07146 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f2825b 0%,#e55b2b 38%,#e55b2b 68%,#f07146 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f2825b 0%,#e55b2b 38%,#e55b2b 68%,#f07146 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', endColorstr='#f07146',GradientType=0 ); /* IE6-9 */
 }
 /* a wrapper around all the actual page content
 this will be centered on the page*/
@@ -136,21 +141,32 @@ iframe {
 
 .polaroid {
     padding: 1em;
-    background-color: grey;
+    background-color: #FFFDD0;
     border-radius: 1rem;
     margin: 1em 1em 2em 1em;
     max-width: 600px;
+	box-shadow: 10px 10px 5px grey;
 }
 .polaroid .aspect-ratio {
-
+	height: 0px;
+	width: 100%;
+	padding-bottom: 75%;
+	position: relative;
 }
 .polaroid .aspect-ratio img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
 }
 .polaroid p {
     text-align: center;
     font-size: 2em;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 
 
