@@ -1,1 +1,17 @@
-
+@charset "UTF-8";
+/* CSS Document */
+.setup {
+    margin: 2em;
+    padding: 2em;
+    border-color: #9B383A;
+	border-width: 1em;
+	border-style: dashed;
+	width: 30em;
+	background-color: #119999;
+}
+.content{
+	box-sizing: content-box;
+}
+.border{
+	box-sizing: border-box;
+}
