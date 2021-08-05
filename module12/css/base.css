@@ -606,24 +606,48 @@ body {
   padding: 0;
   background-image: url(../image/header.jpg);
   background-size: cover;
+  /*HW: Set all sections to have a max-width of 100%*/
+  /*max-width: 100%;*/
 }
 
 .section {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  max-width: 100%;
+}
+/*HW: Set the top nav to have the following styles*/
+.nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .nav a {
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	/*HW: set the links within the nav to have the following*/
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 15%;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 .info {
   background-color: white;
+  /*HW: Set all sections to have a max-width of 100%*/
+  /*max-width: 100%;*/
 }
 
 .footer {
   color: white;
   padding: 30px;
+  /*HW: Set all sections to have a max-width of 100%*/
+  /*max-width: 100%;*/
+  /*HW: finally set the footer element to have the following styles*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .footer form{
   display: flex;
@@ -678,10 +702,21 @@ form input {
   color: black;
 }
 
+/*HW: Set the boxes element to have the following styles*/
+.boxes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 .boxes div {
   border-radius: 5px;
   padding: 10px 10px 0 10px;
   background-color: rgba(0,0,0,.1);
+/*HW: Set the divs directly inside the boxes element to have the following styles*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  margin: 10px;
 }
 .boxes .more {
   margin-top: auto;
